@@ -4,6 +4,25 @@
 using namespace std;
 
 //[Missing Code 1] Write definition of the function findGrade() here.
+char findGrade(float score){
+	if (score > 90)
+	{
+		return 'A';
+	}else if (score > 75 and score <= 90)
+	{
+		return 'B';
+	}else if (score > 60 and score <= 75)
+	{
+		return 'C';
+	}else if (score > 45 and score <= 60)
+	{
+		return 'D';
+	}else if (score <= 45)
+	{
+		return 'F';
+	}
+	return 0;
+}
 
 int main(){
 	//Input the number of students
